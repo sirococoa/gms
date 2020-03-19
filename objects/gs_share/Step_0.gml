@@ -23,11 +23,11 @@ if (room == rm_share)
 		changePiece(from)
 		changePiece(to)
 		obj_okButton.selected = false
-		room_goto_previous()
+		room_goto(rm_battle)
 	}
 	if (obj_cancelButton.selected)
 	{
 		obj_cancelButton.selected = false
-		room_goto_previous()
+		room_goto(rm_battle)
 	}
 }

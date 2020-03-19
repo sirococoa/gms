@@ -26,25 +26,25 @@ with (obj_pawnGradeup_queen)
 {
 	x = other.target.x - 2*gs_board.tile_height
 	y = other.target.y + height*gs_board.tile_width
-	sprite_index = other.target.color
+	image_index = other.target.color
 }
 with (obj_pawnGradeup_rook)
 {
 	x = other.target.x - 0.75*gs_board.tile_height
 	y = other.target.y + height*gs_board.tile_width
-	sprite_index = other.target.color
+	image_index= other.target.color
 }
 with (obj_pawnGradeup_bishop)
 {
 	x = other.target.x + 0.75*gs_board.tile_height
 	y = other.target.y + height*gs_board.tile_width
-	sprite_index = other.target.color
+	image_index = other.target.color
 }
 with (obj_pawnGradeup_knight)
 {
 	x = other.target.x + 2*gs_board.tile_height
 	y = other.target.y + height*gs_board.tile_width
-	sprite_index = other.target.color
+	image_index = other.target.color
 }
 	
 //button[0] = createButton(x - 2*gs_board.tile_height, y + height*gs_board.tile_width, obj_pwanGredeup_queen, target.color)

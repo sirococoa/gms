@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (room != rm_result)
+if (room == rm_battle or room == rm_share)
 {
 	draw_set_font(fnt_point)
 	draw_set_halign(fa_center)

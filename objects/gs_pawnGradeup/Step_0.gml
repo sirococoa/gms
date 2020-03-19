@@ -12,7 +12,7 @@ for (var i = 0; i < 4; i++)
 			{
 				instance_change(obj_queen, false)
 			}
-			room_goto_previous()
+			room_goto(rm_battle)
 		}
 	}
 	with (obj_pawnGradeup_rook)
@@ -23,7 +23,7 @@ for (var i = 0; i < 4; i++)
 			{
 				instance_change(obj_rook, false)
 			}
-			room_goto_previous()
+			room_goto(rm_battle)
 		}
 	}
 	with (obj_pawnGradeup_bishop)
@@ -34,7 +34,7 @@ for (var i = 0; i < 4; i++)
 			{
 				instance_change(obj_bishop, false)
 			}
-			room_goto_previous()
+			room_goto(rm_battle)
 		}
 	}
 	with (obj_pawnGradeup_knight)
@@ -45,7 +45,7 @@ for (var i = 0; i < 4; i++)
 			{
 				instance_change(obj_knight, false)
 			}
-			room_goto_previous()
+			room_goto(rm_battle)
 		}
 	}
 }
