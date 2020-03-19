@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "obj_pawnGradeup_queen",
     "eventList": [
-        
+        {
+            "id": "73ec6dce-022a-42f1-a3a6-4b44036dbb84",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 4,
+            "eventtype": 7,
+            "m_owner": "af018f67-64cc-4ac8-a88b-37cae4559bfd"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
