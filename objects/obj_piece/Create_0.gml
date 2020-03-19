@@ -8,7 +8,6 @@ selected = false
 color = 0	// 0:white, 1:black
 
 point = 0
-stop = false
 first_move = true
 
 for (var i = 0; i < 8; i++)

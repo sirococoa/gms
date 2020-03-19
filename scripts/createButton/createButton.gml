@@ -8,11 +8,10 @@
 
 var _x = argument0
 var _y = argument1
-var _image = argument2
+var _object = argument2
 var _color = argument3
 
-object_set_sprite(obj_button, _image)
-var _id = instance_create_layer(_x, _y, "button", obj_button)
+var _id = instance_create_layer(_x, _y, "button", _object)
 _id.image_index = _color
 
 return _id

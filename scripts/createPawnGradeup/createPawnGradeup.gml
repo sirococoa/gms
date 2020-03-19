@@ -14,16 +14,13 @@ with (instance_create_layer(id.x, id.y, "system", gs_pawnGradeup))
 	}
 	
 	
-	button[0] = createButton(x - 2*gs_board.tile_height, y + height*gs_board.tile_width, spr_queen, target.color)
-	button[1] = createButton(x - 0.75*gs_board.tile_height, y + height*gs_board.tile_width, spr_bishop, target.color)
-	button[2] = createButton(x + 0.75*gs_board.tile_height, y + height*gs_board.tile_width, spr_rook, target.color)
-	button[3] = createButton(x + 2*gs_board.tile_height, y + height*gs_board.tile_width, spr_knight, target.color)
+	button[0] = createButton(x - 2*gs_board.tile_height, y + height*gs_board.tile_width, obj_pwanGredeup_queen, target.color)
+	button[1] = createButton(x - 0.75*gs_board.tile_height, y + height*gs_board.tile_width, obj_pwanGredeup_bishop, target.color)
+	button[2] = createButton(x + 0.75*gs_board.tile_height, y + height*gs_board.tile_width, obj_pwanGredeup_rook, target.color)
+	button[3] = createButton(x + 2*gs_board.tile_height, y + height*gs_board.tile_width, obj_pwanGredeup_knight, target.color)
 
 	new_piece[0] = obj_queen
 	new_piece[1] = obj_bishop
 	new_piece[2] = obj_rook
 	new_piece[3] = obj_knight
-
-	instance_deactivate_object(gs_game)
-	instance_deactivate_object(gs_board)
 }
