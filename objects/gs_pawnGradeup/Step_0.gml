@@ -4,7 +4,7 @@
 
 for (var i = 0; i < 4; i++)
 {
-	with (obj_pawnGredeup_queen)
+	with (obj_pawnGradeup_queen)
 	{
 		if (seleceted)
 		{
@@ -15,7 +15,7 @@ for (var i = 0; i < 4; i++)
 			room_goto_previous()
 		}
 	}
-	with (obj_pawnGredeup_rook)
+	with (obj_pawnGradeup_rook)
 	{
 		if (seleceted)
 		{
@@ -26,7 +26,7 @@ for (var i = 0; i < 4; i++)
 			room_goto_previous()
 		}
 	}
-	with (obj_pawnGredeup_bishop)
+	with (obj_pawnGradeup_bishop)
 	{
 		if (seleceted)
 		{
@@ -37,7 +37,7 @@ for (var i = 0; i < 4; i++)
 			room_goto_previous()
 		}
 	}
-	with (obj_pawnGredeup_knight)
+	with (obj_pawnGradeup_knight)
 	{
 		if (seleceted)
 		{
