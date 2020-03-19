@@ -6,7 +6,7 @@ for (var i = 0; i < 4; i++)
 {
 	with (obj_pawnGradeup_queen)
 	{
-		if (seleceted)
+		if (selected)
 		{
 			with (other.target)
 			{
@@ -17,7 +17,7 @@ for (var i = 0; i < 4; i++)
 	}
 	with (obj_pawnGradeup_rook)
 	{
-		if (seleceted)
+		if (selected)
 		{
 			with (other.target)
 			{
@@ -28,7 +28,7 @@ for (var i = 0; i < 4; i++)
 	}
 	with (obj_pawnGradeup_bishop)
 	{
-		if (seleceted)
+		if (selected)
 		{
 			with (other.target)
 			{
@@ -39,7 +39,7 @@ for (var i = 0; i < 4; i++)
 	}
 	with (obj_pawnGradeup_knight)
 	{
-		if (seleceted)
+		if (selected)
 		{
 			with (other.target)
 			{
