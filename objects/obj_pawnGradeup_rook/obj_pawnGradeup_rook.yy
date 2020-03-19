@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "obj_pawnGradeup_rook",
     "eventList": [
-        
+        {
+            "id": "741ff2af-89cb-4975-9cb8-20a101af5e3e",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 4,
+            "eventtype": 7,
+            "m_owner": "83988039-d1f6-4c7f-865e-410544417459"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

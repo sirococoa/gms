@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "obj_pawnGradeup_bishop",
     "eventList": [
-        
+        {
+            "id": "fac34efa-93f7-4817-8530-c6d015ad4a51",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 4,
+            "eventtype": 7,
+            "m_owner": "089870b4-6526-44bd-8a61-15c71a4366fc"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

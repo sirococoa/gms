@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "obj_pawnGradeup_knight",
     "eventList": [
-        
+        {
+            "id": "31aea1c7-0e57-4a55-afeb-6ec5607391ee",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 4,
+            "eventtype": 7,
+            "m_owner": "3d492499-08b6-40b3-8571-92a61f6de85f"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
