@@ -58,7 +58,7 @@
             "Key": "089870b4-6526-44bd-8a61-15c71a4366fc",
             "Value": {
                 "id": "4d068f00-2af5-4e79-b432-d504dd03ba94",
-                "resourcePath": "objects\\obj_pwanGradeup_bishop\\obj_pwanGradeup_bishop.yy",
+                "resourcePath": "objects\\obj_pawnGradeup_bishop\\obj_pawnGradeup_bishop.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -306,7 +306,7 @@
             "Key": "3d492499-08b6-40b3-8571-92a61f6de85f",
             "Value": {
                 "id": "42faad10-c70d-4abb-ae79-403453377818",
-                "resourcePath": "objects\\obj_pwanGradeup_knight\\obj_pwanGradeup_knight.yy",
+                "resourcePath": "objects\\obj_pawnGradeup_knight\\obj_pawnGradeup_knight.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -506,7 +506,7 @@
             "Key": "83988039-d1f6-4c7f-865e-410544417459",
             "Value": {
                 "id": "6cd9530f-623d-4e5b-90fc-f80dd7cca32a",
-                "resourcePath": "objects\\obj_pwanGradeup_rook\\obj_pwanGradeup_rook.yy",
+                "resourcePath": "objects\\obj_pawnGradeup_rook\\obj_pawnGradeup_rook.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -658,7 +658,7 @@
             "Key": "af018f67-64cc-4ac8-a88b-37cae4559bfd",
             "Value": {
                 "id": "5abef38e-2c30-4c29-9f34-9ad69b073b3c",
-                "resourcePath": "objects\\obj_pwanGradeup_queen\\obj_pwanGradeup_queen.yy",
+                "resourcePath": "objects\\obj_pawnGradeup_queen\\obj_pawnGradeup_queen.yy",
                 "resourceType": "GMObject"
             }
         },
