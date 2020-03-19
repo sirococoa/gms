@@ -14,36 +14,36 @@ with (obj_pawn)
 }
 
 if (target.color == 0)
-	{
-		var height = -1
-	}
-	else
-	{
-		var height = 1
-	}
+{
+	var height = -1
+}
+else
+{
+	var height = 1
+}
 
 with (obj_pawnGradeup_queen)
 {
-	x = other.x - 2*gs_board.tile_height
-	y = other.y + height*gs_board.tile_width
+	x = other.target.x - 2*gs_board.tile_height
+	y = other.target.y + height*gs_board.tile_width
 	sprite_index = other.target.color
 }
 with (obj_pawnGradeup_rook)
 {
-	x = other.x - 0.75*gs_board.tile_height
-	y = other.y + height*gs_board.tile_width
+	x = other.target.x - 0.75*gs_board.tile_height
+	y = other.target.y + height*gs_board.tile_width
 	sprite_index = other.target.color
 }
 with (obj_pawnGradeup_bishop)
 {
-	x = other.x + 0.75*gs_board.tile_height
-	y = other.y + height*gs_board.tile_width
+	x = other.target.x + 0.75*gs_board.tile_height
+	y = other.target.y + height*gs_board.tile_width
 	sprite_index = other.target.color
 }
 with (obj_pawnGradeup_knight)
 {
-	x = other.x + 2*gs_board.tile_height
-	y = other.y + height*gs_board.tile_width
+	x = other.target.x + 2*gs_board.tile_height
+	y = other.target.y + height*gs_board.tile_width
 	sprite_index = other.target.color
 }
 	
