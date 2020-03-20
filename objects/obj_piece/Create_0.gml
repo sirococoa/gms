@@ -7,8 +7,10 @@ pos_y = 0
 selected = false
 color = 0	// 0:white, 1:black
 
+
 point = 0
 first_move = true
+enpassant = false
 
 for (var i = 0; i < 8; i++)
 {

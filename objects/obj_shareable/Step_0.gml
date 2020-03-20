@@ -14,6 +14,10 @@ if (mouse_check_button_pressed(mb_left) and position_meeting(mouse_x, mouse_y, i
 	{
 		instance_change(obj_mass, false)
 	}
+	with (obj_pawnFirstMove)
+	{
+		instance_change(obj_mass, false)
+	}
 	gs_share.from = piece
 	gs_share.to = gs_game.picies[pos_x, pos_y]
 	room_goto(rm_share)

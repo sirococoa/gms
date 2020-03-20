@@ -18,15 +18,7 @@ with (obj_pawn)
 	{
 		// 白
 		// 前進(駒が存在しない時)
-		if (checkEnpty(pos_x, pos_y - 1, color))
-		{
-			// 2マス前進(最初のみ)
-			if (first_move)
-			{
-				checkEnpty(pos_x, pos_y - 2, color)
-				checkAlly(pos_x, pos_y - 2, color)
-			}
-		}
+		checkEnpty(pos_x, pos_y - 1, color)
 		checkAlly(pos_x, pos_y - 1, color)
 		// 前斜め(敵の駒が存在する時)
 		checkEnemy(pos_x - 1, pos_y - 1, color)
@@ -36,15 +28,7 @@ with (obj_pawn)
 	{
 		// 黒
 		// 前進(駒が存在しない時)
-		if (checkEnpty(pos_x, pos_y + 1, color))
-		{
-			// 2マス前進(最初のみ)
-			if (first_move)
-			{
-				checkEnpty(pos_x, pos_y + 2, color)
-				checkAlly(pos_x, pos_y + 2, color)
-			}
-		}
+		checkEnpty(pos_x, pos_y + 1, color)
 		checkAlly(pos_x, pos_y + 1, color)
 		// 前斜め(敵の駒が存在する時)
 		checkEnemy(pos_x - 1, pos_y + 1, color)

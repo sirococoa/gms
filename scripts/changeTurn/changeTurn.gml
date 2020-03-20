@@ -23,6 +23,11 @@ with (obj_moveable)
 	instance_change(obj_mass, false)
 }
 
+with (obj_pawnFirstMove)
+{
+	instance_change(obj_mass, false)
+}
+
 with (obj_shareable)
 {
 	instance_change(obj_mass, false)

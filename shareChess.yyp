@@ -815,6 +815,14 @@
             }
         },
         {
+            "Key": "e9b8f99d-30f7-462a-9dc1-2edf3bc41af6",
+            "Value": {
+                "id": "db617261-e7d3-4097-87ce-a45736665257",
+                "resourcePath": "objects\\obj_pawnFirstMove\\obj_pawnFirstMove.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "ee280434-e184-451f-9cef-a7afb7c5f588",
             "Value": {
                 "id": "c087702a-b8ac-4f85-ae77-89d374ab6bf9",

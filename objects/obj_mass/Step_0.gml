@@ -11,6 +11,10 @@ if (mouse_check_button_pressed(mb_left) and position_meeting(mouse_x, mouse_y, i
 		{
 			instance_change(obj_mass, false)
 		}
+		with (obj_pawnFirstMove)
+		{
+			instance_change(obj_mass, false)
+		}
 		for (var i = 0; i < 8; i++)
 		{
 			for (var j = 0; j < 8; j++)
@@ -23,6 +27,34 @@ if (mouse_check_button_pressed(mb_left) and position_meeting(mouse_x, mouse_y, i
 					}
 					gs_board.mass[i, j].piece = self_piece
 				}
+			}
+			if (self_piece.object_index == obj_pawn)
+			{
+				// 初回は2マス進める
+				if (self_piece.first_move)
+				{
+					if (self_piece.color == 0 and gs_board.mass[pos_x, pos_y - 2].piece == noone)
+					{
+						with (gs_board.mass[pos_x, pos_y - 2])
+						{
+							instance_change(obj_pawnFirstMove, false)
+						}
+						gs_board.mass[pos_x, pos_y - 2].piece = self_piece
+					}
+					else if (self_piece.color == 1 and gs_board.mass[pos_x, pos_y + 2].piece == noone)
+					{
+						with (gs_board.mass[pos_x, pos_y + 2])
+						{
+							instance_change(obj_pawnFirstMove, false)
+						}
+						gs_board.mass[pos_x, pos_y + 2].piece = self_piece
+					}
+					else
+					{
+						// no enter
+					}
+				}
+			
 			}
 			if (self_piece.object_index == obj_king)
 			{
