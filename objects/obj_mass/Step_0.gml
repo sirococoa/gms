@@ -16,9 +16,9 @@ if (mouse_check_button_pressed(mb_left) and position_meeting(mouse_x, mouse_y, i
 				{
 					with (gs_board.mass[i, j])
 					{
+						piece = self_piece
 						instance_change(obj_moveable, false)
 					}
-					gs_board.mass[i, j].piece = self_piece
 				}
 			}
 			if (self_piece.object_index == obj_pawn)
@@ -30,21 +30,61 @@ if (mouse_check_button_pressed(mb_left) and position_meeting(mouse_x, mouse_y, i
 					{
 						with (gs_board.mass[pos_x, pos_y - 2])
 						{
+							piece = self_piece
 							instance_change(obj_pawnFirstMove, false)
 						}
-						gs_board.mass[pos_x, pos_y - 2].piece = self_piece
 					}
 					else if (self_piece.color == 1 and gs_board.mass[pos_x, pos_y + 2].piece == noone)
 					{
 						with (gs_board.mass[pos_x, pos_y + 2])
 						{
+							piece = self_piece
 							instance_change(obj_pawnFirstMove, false)
 						}
-						gs_board.mass[pos_x, pos_y + 2].piece = self_piece
 					}
 					else
 					{
 						// no enter
+					}
+				}
+				// enpassant
+				if (pos_x > 0 and gs_game.picies[pos_x - 1, pos_y] != noone and gs_game.picies[pos_x - 1, pos_y].enpassant and gs_game.picies[pos_x - 1, pos_y].color != self_piece.color)
+				{
+					if (self_piece.color == 0)
+					{
+						with (gs_board.mass[pos_x - 1, pos_y - 1])
+						{
+							piece = self_piece
+							instance_change(obj_enpassant, false)
+						}
+					}
+					else
+					{
+						with (gs_board.mass[pos_x - 1, pos_y + 1])
+						{
+							piece = self_piece
+							instance_change(obj_enpassant, false)
+						}
+					}
+					
+				}
+				if (pos_x < 7 and gs_game.picies[pos_x + 1, pos_y] != noone and gs_game.picies[pos_x + 1, pos_y].enpassant and gs_game.picies[pos_x + 1, pos_y].color != self_piece.color)
+				{
+					if (self_piece.color == 0)
+					{
+						with (gs_board.mass[pos_x + 1, pos_y - 1])
+						{
+							piece = self_piece
+							instance_change(obj_enpassant, false)
+						}
+					}
+					else
+					{
+						with (gs_board.mass[pos_x + 1, pos_y + 1])
+						{
+							piece = self_piece
+							instance_change(obj_enpassant, false)
+						}
 					}
 				}
 			

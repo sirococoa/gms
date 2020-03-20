@@ -20,3 +20,10 @@ with (gs_game)
 
 resetMass()
 
+with (obj_pawn)
+{
+	if (color == gs_game.player)
+	{
+		enpassant = false
+	}
+}

@@ -10,6 +10,12 @@ with (obj_pawnFirstMove)
 	instance_change(obj_mass, false)
 }
 
+with (obj_enpassant)
+{
+	piece = noone
+	instance_change(obj_mass, false)
+}
+
 with (obj_shareable)
 {
 	piece = noone
