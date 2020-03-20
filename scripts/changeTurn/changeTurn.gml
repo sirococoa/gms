@@ -18,17 +18,5 @@ with (gs_game)
 	checkCastling()
 }
 
-with (obj_moveable)
-{
-	instance_change(obj_mass, false)
-}
+resetMass()
 
-with (obj_pawnFirstMove)
-{
-	instance_change(obj_mass, false)
-}
-
-with (obj_shareable)
-{
-	instance_change(obj_mass, false)
-}

@@ -6,15 +6,8 @@ if (mouse_check_button_pressed(mb_left) and position_meeting(mouse_x, mouse_y, i
 	var self_piece = gs_game.picies[pos_x, pos_y]
 	if (self_piece != noone and self_piece.color == gs_game.player)
 	{
+		resetMass()
 		// move
-		with (obj_moveable)
-		{
-			instance_change(obj_mass, false)
-		}
-		with (obj_pawnFirstMove)
-		{
-			instance_change(obj_mass, false)
-		}
 		for (var i = 0; i < 8; i++)
 		{
 			for (var j = 0; j < 8; j++)
@@ -80,10 +73,6 @@ if (mouse_check_button_pressed(mb_left) and position_meeting(mouse_x, mouse_y, i
 		}
 		// share
 		gs_share.from = self_piece
-		with (obj_shareable)
-		{
-			instance_change(obj_mass, false)
-		}
 		for (var i = 0; i < 8; i++)
 		{
 			for (var j = 0; j < 8; j++)
