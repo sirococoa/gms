@@ -21,7 +21,7 @@ with (obj_king)
 				}
 			}
 			castling_left_rook = gs_game.picies[i, pos_y]
-			if (pos_x - i > 2 and castling_left_rook.object_index == obj_rook and castling_left_rook .first_move and castling_left_rook .color == color)
+			if (pos_x - i > 2 and castling_left_rook != noone and castling_left_rook.object_index == obj_rook and castling_left_rook .first_move and castling_left_rook .color == color)
 			{
 				// check enemy_atack
 				var attacked_flg = false
@@ -56,7 +56,7 @@ with (obj_king)
 				}
 			}
 			castling_right_rook = gs_game.picies[i, pos_y]
-			if (i - pos_x > 2 and castling_right_rook.object_index == obj_rook and castling_right_rook.first_move and castling_right_rook.color == color)
+			if (i - pos_x > 2 and castling_left_rook != noone and castling_right_rook.object_index == obj_rook and castling_right_rook.first_move and castling_right_rook.color == color)
 			{
 				// check enemy_atack
 				var attacked_flg = false
