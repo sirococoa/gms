@@ -44,11 +44,11 @@ with (obj_king)
 			}
 			
 		}
-		// find left rook
+		// find right rook
 		if (pos_x < 6)
 		{
 			var i
-			for (i = pos_x + 1; i < 8; i++)
+			for (i = pos_x + 1; i < 7; i++)
 			{
 				if (gs_game.picies[i, pos_y] != noone)
 				{
@@ -56,7 +56,7 @@ with (obj_king)
 				}
 			}
 			castling_right_rook = gs_game.picies[i, pos_y]
-			if (i - pos_x > 2 and castling_left_rook != noone and castling_right_rook.object_index == obj_rook and castling_right_rook.first_move and castling_right_rook.color == color)
+			if (i - pos_x > 2 and castling_right_rook != noone and castling_right_rook.object_index == obj_rook and castling_right_rook.first_move and castling_right_rook.color == color)
 			{
 				// check enemy_atack
 				var attacked_flg = false
