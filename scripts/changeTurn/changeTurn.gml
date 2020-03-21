@@ -14,6 +14,7 @@ with (gs_game)
 	{
 		room_goto(rm_result)
 	}
+	remain_share_time = gs_rule.max_share_time
 	moveable()
 	checkCastling()
 }

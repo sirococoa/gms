@@ -112,18 +112,21 @@ if (mouse_check_button_pressed(mb_left) and position_meeting(mouse_x, mouse_y, i
 			}
 		}
 		// share
-		gs_share.from = self_piece
-		for (var i = 0; i < 8; i++)
+		if (gs_game.remain_share_time > 0)
 		{
-			for (var j = 0; j < 8; j++)
+			gs_share.from = self_piece
+			for (var i = 0; i < 8; i++)
 			{
-				if (self_piece.shareable_tiles[i, j])
+				for (var j = 0; j < 8; j++)
 				{
-					with (gs_board.mass[i, j])
+					if (self_piece.shareable_tiles[i, j])
 					{
-						instance_change(obj_shareable, false)
+						with (gs_board.mass[i, j])
+						{
+							instance_change(obj_shareable, false)
+						}
+						gs_board.mass[i, j].piece = self_piece
 					}
-					gs_board.mass[i, j].piece = self_piece
 				}
 			}
 		}

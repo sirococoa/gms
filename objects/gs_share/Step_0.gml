@@ -23,6 +23,10 @@ if (room == rm_share)
 		changePiece(from)
 		changePiece(to)
 		obj_okButton.selected = false
+		if (share_point != 0)
+		{
+			gs_game.remain_share_time -= 1
+		}
 		room_goto(rm_battle)
 	}
 	if (obj_cancelButton.selected)

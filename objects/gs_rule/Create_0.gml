@@ -20,3 +20,5 @@ for (var i = 0; i < ds_map_size(pieceToPoint); i++)
 	key = ds_map_find_next(pieceToPoint, key)
 }
 ds_list_sort(point_list, true)
+
+max_share_time = 1

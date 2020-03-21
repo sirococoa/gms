@@ -10,6 +10,7 @@ target = noone
 
 move = true
 
+remain_share_time = gs_rule.max_share_time
 
 for (var i = 0; i < 8; i++)
 {
